@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  overflow : hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-family: 'Maven Pro', sans-serif;
+  background-color: #02051a;
+}
+
+path {
+	fill: none;
+  stroke: #cff;
+}
+
+path.flow {
+  	 fill: transparent;
+     stroke: green;
+  	 opacity: 0.6;
+     stroke-dasharray: 10 10;
+/*      stroke-dashoffset: 0; */
+     animation: dash 1.5s linear infinite;
+}
+@keyframes dash {
+  from {
+   stroke-dashoffset: 320;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+text {
+	fill: #24a3ee;
+  text-shadow: 
+    -1px -1px 1px white,
+    -1px  1px 1px white,
+     1px -1px 1px white,
+     1px  1px 1px white;
+  pointer-events: none;
+}
